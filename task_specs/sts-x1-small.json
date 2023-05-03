@@ -1,5 +1,5 @@
 {
-  "task_name": "sts-x1",
+  "task_name": "sts-x1-small",
   "labels": {
     "1": {
       "instruction": "Task: Write two sentences that mean the same thing.\nSentence 1: \"",
