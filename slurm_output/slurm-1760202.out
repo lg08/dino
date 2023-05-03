@@ -1,0 +1,29 @@
+Tue May  2 20:34:02 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 525.60.13    Driver Version: 525.60.13    CUDA Version: 12.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-PCIE...  On   | 00000000:14:00.0 Off |                    0 |
+| N/A   32C    P0    24W / 250W |      0MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-PCIE...  On   | 00000000:39:00.0 Off |                    0 |
+| N/A   36C    P0    25W / 250W |      0MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Dataset Entries:   0%|          | 0/7 [00:00<?, ?it/s]Dataset Entries:  14%|█▍        | 1/7 [00:05<00:31,  5.25s/it]Dataset Entries:  29%|██▊       | 2/7 [00:09<00:25,  5.07s/it]Dataset Entries:  43%|████▎     | 3/7 [00:14<00:19,  4.94s/it]Dataset Entries:  57%|█████▋    | 4/7 [00:19<00:14,  4.85s/it]Dataset Entries:  71%|███████▏  | 5/7 [00:23<00:09,  4.79s/it]Dataset Entries:  86%|████████▌ | 6/7 [00:28<00:04,  4.74s/it]Dataset Entries: 100%|██████████| 7/7 [00:33<00:00,  4.71s/it]Dataset Entries: 100%|██████████| 7/7 [00:33<00:00,  4.73s/it]
+Parameters: Namespace(allow_newlines_in_outputs=False, batch_size=16, date='02/05/2023 20:34:15', decay_constant=100, input_file=None, input_file_type='plain', keep_outputs_without_eos=False, max_output_length=40, min_num_tokens=-1, min_num_words=-1, model_name='gpt2-xl', no_cuda=False, num_entries_per_input_and_label=None, num_entries_per_label=100, openai_api_key=None, output_dir='output', remove_duplicates=False, remove_identical_pairs=False, seed=42, task_file='task_specs/sts-x1.json', top_k=5, top_p=0.9)
+Starting dataset generation with DINO...
+Dataset generation complete, dataset contains 329 entries
+Done saving dataset to file 'output/sts-x1-dataset.jsonl'

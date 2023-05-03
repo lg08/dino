@@ -1,0 +1,26 @@
+Wed May  3 10:45:47 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 525.60.13    Driver Version: 525.60.13    CUDA Version: 12.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-PCIE...  On   | 00000000:88:00.0 Off |                    0 |
+| N/A   33C    P0    26W / 250W |      0MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-PCIE...  On   | 00000000:B1:00.0 Off |                    0 |
+| N/A   32C    P0    26W / 250W |      0MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+/var/spool/slurmd/job1760588/slurm_script: line 33:  5990 Killed                  python dino.py --output_dir output --task_file task_specs/sts-x2.json --input_file output/sts-x1-dataset.jsonl --input_file_type jsonl --num_entries_per_input_and_label 1 --remove_duplicates --remove_identical_pairs
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=1760588.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.

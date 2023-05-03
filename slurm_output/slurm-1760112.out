@@ -1,0 +1,37 @@
+Tue May  2 15:44:04 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 525.60.13    Driver Version: 525.60.13    CUDA Version: 12.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A100-PCI...  On   | 00000000:17:00.0 Off |                    0 |
+| N/A   28C    P0    31W / 250W |      0MiB / 40960MiB |      0%      Default |
+|                               |                      |             Disabled |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A100-PCI...  On   | 00000000:E3:00.0 Off |                    0 |
+| N/A   43C    P0    41W / 250W |      0MiB / 40960MiB |      0%      Default |
+|                               |                      |             Disabled |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Parameters: Namespace(allow_newlines_in_outputs=False, batch_size=32, date='02/05/2023 15:44:12', decay_constant=100, input_file=None, input_file_type='plain', keep_outputs_without_eos=False, max_output_length=40, min_num_tokens=-1, min_num_words=-1, model_name='gpt2-xl', no_cuda=False, num_entries_per_input_and_label=None, num_entries_per_label=5000, openai_api_key=None, output_dir='output', remove_duplicates=False, remove_identical_pairs=False, seed=42, task_file='task_specs/sts-x1.json', top_k=5, top_p=0.9)
+Traceback (most recent call last):
+  File "dino.py", line 152, in <module>
+    model = GPT2Wrapper(model_name=args.model_name, use_cuda=not args.no_cuda) if not args.openai_api_key else args.model_name
+  File "/home/smohr/dino/modeling.py", line 234, in __init__
+    self._tokenizer = GPT2Tokenizer.from_pretrained(model_name)
+  File "/scratch/network/smohr/dino/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 1738, in from_pretrained
+    resolved_vocab_files[file_id] = cached_path(
+  File "/scratch/network/smohr/dino/lib/python3.8/site-packages/transformers/file_utils.py", line 1048, in cached_path
+    output_path = get_from_cache(
+  File "/scratch/network/smohr/dino/lib/python3.8/site-packages/transformers/file_utils.py", line 1234, in get_from_cache
+    raise ValueError(
+ValueError: Connection error, and we cannot find the requested files in the cached path. Please try again or make sure your Internet connection is on.
