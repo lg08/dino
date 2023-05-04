@@ -1,0 +1,40 @@
+Wed May  3 20:49:50 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 525.60.13    Driver Version: 525.60.13    CUDA Version: 12.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-PCIE...  On   | 00000000:14:00.0 Off |                    0 |
+| N/A   33C    P0    25W / 250W |      0MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-PCIE...  On   | 00000000:88:00.0 Off |                    0 |
+| N/A   33C    P0    26W / 250W |      0MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Dataset Entries:   0%|          | 0/32 [00:00<?, ?it/s]Dataset Entries:   3%|▎         | 1/32 [00:13<06:45, 13.08s/it]Dataset Entries:   6%|▋         | 2/32 [00:25<06:21, 12.73s/it]Dataset Entries:   9%|▉         | 3/32 [00:36<06:02, 12.49s/it]Dataset Entries:  12%|█▎        | 4/32 [00:48<05:45, 12.32s/it]Dataset Entries:  16%|█▌        | 5/32 [01:00<05:29, 12.20s/it]Dataset Entries:  19%|█▉        | 6/32 [01:12<05:15, 12.12s/it]Dataset Entries:  22%|██▏       | 7/32 [01:24<05:01, 12.06s/it]Dataset Entries:  25%|██▌       | 8/32 [01:36<04:48, 12.02s/it]Dataset Entries:  28%|██▊       | 9/32 [01:48<04:35, 11.99s/it]Dataset Entries:  31%|███▏      | 10/32 [02:00<04:23, 11.97s/it]Dataset Entries:  34%|███▍      | 11/32 [02:12<04:11, 11.96s/it]Dataset Entries:  38%|███▊      | 12/32 [02:24<03:58, 11.95s/it]Dataset Entries:  41%|████      | 13/32 [02:36<03:46, 11.94s/it]Dataset Entries:  44%|████▍     | 14/32 [02:48<03:34, 11.94s/it]Dataset Entries:  47%|████▋     | 15/32 [03:00<03:22, 11.94s/it]Dataset Entries:  50%|█████     | 16/32 [03:11<03:10, 11.94s/it]Dataset Entries:  53%|█████▎    | 17/32 [03:23<02:59, 11.93s/it]Dataset Entries:  56%|█████▋    | 18/32 [03:35<02:47, 11.93s/it]Dataset Entries:  59%|█████▉    | 19/32 [03:47<02:35, 11.93s/it]Dataset Entries:  62%|██████▎   | 20/32 [03:59<02:23, 11.93s/it]Dataset Entries:  66%|██████▌   | 21/32 [04:11<02:11, 11.93s/it]Dataset Entries:  69%|██████▉   | 22/32 [04:23<01:59, 11.93s/it]Dataset Entries:  72%|███████▏  | 23/32 [04:35<01:47, 11.93s/it]Dataset Entries:  75%|███████▌  | 24/32 [04:47<01:35, 11.93s/it]Dataset Entries:  78%|███████▊  | 25/32 [04:59<01:23, 11.93s/it]Dataset Entries:  81%|████████▏ | 26/32 [05:11<01:11, 11.93s/it]Dataset Entries:  84%|████████▍ | 27/32 [05:23<00:59, 11.93s/it]Dataset Entries:  88%|████████▊ | 28/32 [05:35<00:47, 11.93s/it]Dataset Entries:  91%|█████████ | 29/32 [05:47<00:35, 11.93s/it]Dataset Entries:  94%|█████████▍| 30/32 [05:59<00:23, 11.93s/it]Dataset Entries:  97%|█████████▋| 31/32 [06:10<00:11, 11.93s/it]Dataset Entries: 100%|██████████| 32/32 [06:22<00:00, 11.93s/it]Dataset Entries: 100%|██████████| 32/32 [06:22<00:00, 11.97s/it]
+Parameters: Namespace(allow_newlines_in_outputs=False, batch_size=128, date='03/05/2023 20:50:02', decay_constant=50.0, input_file=None, input_file_type='plain', keep_outputs_without_eos=False, max_output_length=40, min_num_tokens=-1, min_num_words=-1, model_name='gpt2-xl', no_cuda=False, num_entries_per_input_and_label=None, num_entries_per_label=4000, openai_api_key=None, output_dir='output', remove_duplicates=True, remove_identical_pairs=False, seed=42, task_file='task_specs/sts-x1-decay.json', top_k=0, top_p=0.9)
+Starting dataset generation with DINO...
+Dataset generation complete, dataset contains 11608 entries
+Done saving dataset to file 'output/sts-x1-decay-dataset.jsonl'
+Parameters: Namespace(allow_newlines_in_outputs=False, batch_size=None, date='03/05/2023 20:57:50', decay_constant=50.0, input_file='output/sts-x1-dataset-decay.jsonl', input_file_type='jsonl', keep_outputs_without_eos=False, max_output_length=40, min_num_tokens=-1, min_num_words=-1, model_name='gpt2-xl', no_cuda=False, num_entries_per_input_and_label=5, num_entries_per_label=None, openai_api_key=None, output_dir='output', remove_duplicates=True, remove_identical_pairs=True, seed=42, task_file='task_specs/sts-x2-decay.json', top_k=5, top_p=0.9)
+Traceback (most recent call last):
+  File "dino.py", line 147, in <module>
+    inputs = read_inputs(args.input_file, args.input_file_type) if args.input_file else None
+  File "/home/lgen/dino/utils.py", line 53, in read_inputs
+    return read_jsonl_inputs(input_file)
+  File "/home/lgen/dino/utils.py", line 68, in read_jsonl_inputs
+    ds_entries = DatasetEntry.read_list(path)
+  File "/home/lgen/dino/utils.py", line 123, in read_list
+    with open(path, 'r', encoding='utf8') as fh:
+FileNotFoundError: [Errno 2] No such file or directory: 'output/sts-x1-dataset-decay.jsonl'

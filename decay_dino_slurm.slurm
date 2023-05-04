@@ -13,13 +13,13 @@
 
 module purge
 module load anaconda3/2022.5
-conda activate /scratch/network/lgen/dino
+conda activate /scratch/network/lgen/dino_env
 
 nvidia-smi
 # Generate X1
 python dino.py --output_dir output \
                --task_file task_specs/sts-x1-decay.json \
-               --num_entries_per_label 4000 \
+               --num_entries_per_label 3500 \
                --batch_size 128 \
                --top_p 0.9 \
                --top_k 0 \
@@ -28,7 +28,7 @@ python dino.py --output_dir output \
 # Generate X1X2
 python dino.py --output_dir output \
                --task_file task_specs/sts-x2-decay.json \
-               --input_file output/sts-x1-dataset-decay.jsonl \
+               --input_file output/sts-x1-decay-dataset.jsonl \
                --input_file_type jsonl \
                --num_entries_per_input_and_label 5 \
                --remove_duplicates \

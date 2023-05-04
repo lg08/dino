@@ -1,0 +1,37 @@
+Not a conda environment: /scratch/network/lgen/dino
+Wed May  3 19:48:50 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 525.60.13    Driver Version: 525.60.13    CUDA Version: 12.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-PCIE...  On   | 00000000:14:00.0 Off |                    0 |
+| N/A   33C    P0    25W / 250W |      0MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-PCIE...  On   | 00000000:88:00.0 Off |                    0 |
+| N/A   33C    P0    26W / 250W |      0MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Traceback (most recent call last):
+  File "/home/lgen/dino/dino.py", line 24, in <module>
+    from modeling import GPT2Wrapper, DinoGenerator, PLACEHOLDER_STR
+  File "/home/lgen/dino/modeling.py", line 21, in <module>
+    import openai
+ModuleNotFoundError: No module named 'openai'
+Traceback (most recent call last):
+  File "/home/lgen/dino/dino.py", line 24, in <module>
+    from modeling import GPT2Wrapper, DinoGenerator, PLACEHOLDER_STR
+  File "/home/lgen/dino/modeling.py", line 21, in <module>
+    import openai
+ModuleNotFoundError: No module named 'openai'
