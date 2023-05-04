@@ -4,7 +4,7 @@
     "model_name": "gpt2-xl",
     "openai_api_key": null,
     "max_output_length": 40,
-    "decay_constant": 50.0,
+    "decay_constant": 150.0,
     "top_p": 0.9,
     "top_k": 5,
     "input_file": "output/sts-x1-decay-dataset.jsonl",
@@ -20,5 +20,5 @@
     "min_num_tokens": -1,
     "no_cuda": false,
     "seed": 42,
-    "date": "04/05/2023 00:59:37"
+    "date": "04/05/2023 17:11:56"
 }

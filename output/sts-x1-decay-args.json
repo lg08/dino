@@ -4,13 +4,13 @@
     "model_name": "gpt2-xl",
     "openai_api_key": null,
     "max_output_length": 40,
-    "decay_constant": 50.0,
+    "decay_constant": 150.0,
     "top_p": 0.9,
     "top_k": 0,
     "input_file": null,
     "input_file_type": "plain",
     "num_entries_per_input_and_label": null,
-    "num_entries_per_label": 3500,
+    "num_entries_per_label": 150,
     "batch_size": 128,
     "remove_duplicates": true,
     "remove_identical_pairs": false,
@@ -20,5 +20,5 @@
     "min_num_tokens": -1,
     "no_cuda": false,
     "seed": 42,
-    "date": "04/05/2023 00:52:55"
+    "date": "04/05/2023 17:10:33"
 }

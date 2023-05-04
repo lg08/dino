@@ -19,12 +19,12 @@ nvidia-smi
 # Generate X1
 python dino.py --output_dir output \
                --task_file task_specs/sts-x1-decay.json \
-               --num_entries_per_label 3500 \
+               --num_entries_per_label 150 \
                --batch_size 128 \
                --top_p 0.9 \
                --top_k 0 \
                --remove_duplicates \
-               --decay_constant 50
+               --decay_constant 150
 # Generate X1X2
 python dino.py --output_dir output \
                --task_file task_specs/sts-x2-decay.json \
@@ -33,4 +33,4 @@ python dino.py --output_dir output \
                --num_entries_per_input_and_label 5 \
                --remove_duplicates \
                --remove_identical_pairs \
-               --decay_constant 50
+               --decay_constant 150
