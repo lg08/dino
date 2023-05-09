@@ -2,11 +2,11 @@
 
 This repository was branched from the code for [Generating Datasets with Pretrained Language Models](https://arxiv.org/abs/2104.07540). We provided additional experiemnts on their code for the final project assignment for COS 484 at Princeton University in Spring 2023.
 
-## 🔧 Setup
+## Setup
 
-All requirements for D<small>INO</small> can be found in ``requirements.txt``. You can install all required packages in a new environment with ``pip install -r requirements.txt``.
+All requirements for D<small>INO</small> can be found in ``requirements.txt``. You can install all required packages in a new environment with ``pip install -r requirements.txt``. We make small modifications to the requirements from the original paper, which are reflected in this file.
 
-## 💬 CLI Usage
+## CLI Usage
 
 #### Single Texts
 To generate datasets for (single) text classification, you can use D<small>INO</small> as follows:
@@ -36,9 +36,9 @@ with ``<OUTPUT_DIR>`` and ``<TASK_FILE>`` as before. ``<INPUT_FILE>`` refers to 
 
 and ``<N>`` is the number of examples to generate per label and input text.
 
-## 📋 Task Specs
+Examples of this generation process are found in the SLURM files created to run on Princeton's Adroit Cluster. Sample output is also included.
 
-🚨 *Before you write custom task specifications, please note that this is still a very early release and we have not tested D<small>INO</small> on other tasks than semantic textual similarity yet. Please let us know if you see something strange.* 🚨
+## Task Specs
 
 To generate a dataset for a task, you need to provide a file containing a *task specification*, containing (among other things) the instructions given to the pretrained language model. A task specification is a single JSON object that looks like this:
 
