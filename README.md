@@ -64,10 +64,11 @@ Here, ``<TASK_NAME>`` is the name for the task and ``<LABEL_1>``, ..., ``<LABEL_
 
 #### Examples
 
-You can find two examples of task specifications in ``/task_specs``:
+You can find several examples of task specifications in ``/task_specs``. We have added several supplemental task specification scripts from the original paper in order to perform our additional experiments.
 
-- ``sts.json`` is a task specification for generating a semantic textual similarity dataset if *a set of raw input texts is already given*.
-- ``sts-x1.json`` is a task specification for generating a set of raw input texts. This set can then be used in a subsequent step to generate a full STS dataset using ``sts.json``.
+#### Evaluation Pipeline
+
+Additional postprocessing and evaluation pipelines are created to supplement prior work. We provide a sample of these implementations in the code base. Since most of these pipelines were run locally to best maximize GPU use, we observe that the provided code reflects only a sample of the full number of experiments ran.
 
 #### Writing Instructions
 
@@ -92,7 +93,7 @@ Sentence 2: "
 
 ## 🦕 Generated D<small>INO</small>s
 
-This section lists datasets that we used as our model datasets as we attempt to reproduce baseline results.
+This section lists datasets that we used as our model datasets as we attempt to reproduce baseline results. Our new generated datasets are available in the codebase.
 
 | Dataset | Description | Link |
 | :------ | :---------- | :--- |
