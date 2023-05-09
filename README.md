@@ -1,6 +1,6 @@
 # Datasets from Instructions (D<small>INO</small> 🦕)
 
-This repository contains the code for [Generating Datasets with Pretrained Language Models](https://arxiv.org/abs/2104.07540). The paper introduces a method called *<b>D</b>atasets from <b>In</b>structi<b>o</b>ns* (D<small>INO</small> 🦕) that enables pretrained language models to generate entire datasets from scratch.
+This repository was branched from the code for [Generating Datasets with Pretrained Language Models](https://arxiv.org/abs/2104.07540). We provided additional experiemnts on their code for the final project assignment for COS 484 at Princeton University in Spring 2023.
 
 ## 🔧 Setup
 
@@ -92,7 +92,7 @@ Sentence 2: "
 
 ## 🦕 Generated D<small>INO</small>s
 
-This section lists datasets that we have generated using D<small>INO</small>.
+This section lists datasets that we used as our model datasets as we attempt to reproduce baseline results.
 
 | Dataset | Description | Link |
 | :------ | :---------- | :--- |
@@ -103,7 +103,7 @@ This section lists datasets that we have generated using D<small>INO</small>.
 
 ## 📕 Citation
 
-If you make use of the code in this repository or of any D<small>INO</small>-based dataset, please cite the following paper:
+We heavily adapt our code from the paper provided below:
 ````
 @article{schick2020generating,
   title={Generating Datasets with Pretrained Language Models},
